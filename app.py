@@ -24,7 +24,7 @@ def iniciar_aplicativo():
             case 3:
                 print('Area do leitor')
             case 4:
-                print('ajuda')
+                imprimirAjuda()
             case _:
                 print('[!] Opção Inválida')
             
@@ -35,4 +35,5 @@ def iniciar_aplicativo():
 if __name__ == "__main__":
     from lib.menu import imprimirMenuPrincipalRetornaOpcao
     from lib.livros import imprimirMenuLivros
+    from lib.ajuda import imprimirAjuda
     iniciar_aplicativo()
