@@ -22,7 +22,7 @@ def iniciar_aplicativo():
             case 2:
                 print('Entrando em relatorios')
             case 3:
-                print('Area do leitor')
+                imprimirMenuLeitor()
             case 4:
                 imprimirAjuda()
             case _:
@@ -35,5 +35,6 @@ def iniciar_aplicativo():
 if __name__ == "__main__":
     from lib.menu import imprimirMenuPrincipalRetornaOpcao
     from lib.livros import imprimirMenuLivros
+    from lib.leitor import imprimirMenuLeitor
     from lib.ajuda import imprimirAjuda
     iniciar_aplicativo()
