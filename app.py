@@ -26,7 +26,7 @@ def iniciar_aplicativo():
             case 4:
                 imprimirAjuda()
             case _:
-                print('[!] Opção Inválida')
+                print('[!] Opção Inválida.')
             
         
         opcao_escolhida = imprimirMenuPrincipalRetornaOpcao()
