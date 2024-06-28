@@ -72,6 +72,9 @@ def emprestarLivro() -> None:
     if indice_leitor == None:
         print("[!] Leitor não encontrado")
         return None
+    if leitores[indice_leitor]["multado"] == True:
+        print(f"[!] O leitor {leitores[indice_leitor]['nome']} possui multas pendentes e portanto não será possível fazer nenhum empréstimo")
+        return None
     data_emprestimo = datetime.datetime.now()
     data_emprestimo_string = data_emprestimo.strftime("%d/%m/%Y")
     data_devolucao = data_emprestimo + datetime.timedelta(days=14)
