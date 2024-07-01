@@ -10,7 +10,7 @@ livros = [
 leitores = [
     {"nome": "João Carlos da Silva", "livros": [], "multado": False, "lista_multas": []},
     {"nome": "Nascimento de Oliveira", "livros": [{"titulo": "Cálculo I", "data_devolucao": "09/07/2024", "data_emprestimo": "20/06/2024"}], "multado": False, "lista_multas": []},
-    {"nome": "Caio César", "livros": [{"título": "Geometria Analítica", "data_devolucao": "04/06/2024", "data_emprestimo": "26/05/2024"}], "multado": True, "lista_multas": [{"titulo": "Geometria Analítica", "valor": 15}]},
+    {"nome": "Caio César", "livros": [{"título": "Geometria Analítica", "data_devolucao": "04/06/2024", "data_emprestimo": "26/05/2024"}], "multado": True, "lista_multas": [{"titulo": "Geometria Analítica", "valor": 15}, {"titulo": "Biblia", "valor": 15}]},
 ]
 
 def iniciar_aplicativo():

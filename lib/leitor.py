@@ -9,14 +9,14 @@ def verificarLeitor(indice):
     for leitor in leitores:
         if len(leitor["lista_multas"]) != 0:
             lista_multado.append(leitor["nome"])
-    
+
     leitor_multado = leitores[indice]["nome"]
 
     for leitor in lista_multado:
-        if  leitor_multado == leitor:
+        if leitor_multado == leitor:
             return True
         else:
-            return False        
+            return False
 
 
 def removerLeitor():
@@ -75,8 +75,6 @@ def imprimirMenuLeitor():
                 listarLeitores()
             case 3:
                 removerLeitor()
-            case 5:
-                encontrarUnicoLeitor()
             case 4:
                 break
             case _:
