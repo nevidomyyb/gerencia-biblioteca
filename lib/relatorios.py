@@ -16,14 +16,14 @@ def imprimirRelatorio():
                 if len(leitor["lista_multas"]) != 0:
                     for livro_multado in leitor["lista_multas"]:
                         if livro["titulo"] == livro_multado["titulo"]:
-                            entrada = f"{livro["titulo"]} - {leitor["nome"]}"
+                            entrada = f"{livro['titulo']} - {leitor['nome']}"
                             lista_emprestados.append(entrada)
 
                             lista_leitores_multados.append(leitor["nome"])
                 else:
                     for livro_emprestado in leitor["livros"]:
                         if livro["titulo"] == livro_emprestado["titulo"]:
-                            entrada = f"{livro["titulo"]} - {leitor["nome"]}"
+                            entrada = f"{livro['titulo']} - {leitor['nome']}"
                             lista_emprestados.append(entrada)
 
 
